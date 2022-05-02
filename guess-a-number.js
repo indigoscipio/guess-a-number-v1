@@ -1,33 +1,45 @@
 let numInput = document.querySelector("#number-input")
 let btnCheck = document.querySelector("#check")
+let notificationPopUp = document.querySelector(".notification");
+let notificationText = document.querySelector("#notification-text")
+let btnTryAgain = document.querySelector(".try-again")
 
 //check if a number is greater or less than 20
     //if its greater, pop up the notification
     //if it's less, pop up notification
     // if it guesses the right number, game stops
 
-
 var randomNum = Math.floor(Math.random()*20 +1 )
 btnCheck.addEventListener("click", checkNum);
 var score = 0;
 var highScore = 0; 
+console.log(notificationPopUp);
+console.log(btnTryAgain);
 
 //a function that checks the user input and compare it to the random number
 function checkNum(){
     let userGuessNum = numInput.value;
-    if (userGuessNum < randomNum){
+    if (userGuessNum < randomNum){ //red notification popup
+        notificationPopUp.classList.remove("hidden");
+        notificationText.innerText = "Your guess is too low! Try again?";
         console.log("Your guess is too low!");
     }
-    else if(userGuessNum > randomNum){
+    else if(userGuessNum > randomNum){ //red notification popup
+        notificationPopUp.classList.remove("hidden");
+        notificationText.innerText = "Your guess is too high! Try again?";
         console.log("Your guess is too high!")
     }
-    else{
+    else{ //game stops, notification turns to green and try again button pops up
+        notificationPopUp.classList.remove("hidden");
+        btnTryAgain.classList.remove("hidden");
+        notificationPopUp.style.backgroundColor = "green";
+        notificationText.innerText = "You are correct!!!!";
         console.log("Correct!!!!");
     }
+
     console.log(`Your answer: ${userGuessNum}`);
     console.log(`the random number is: ${randomNum}`)
 }
-
 
 //A function keeps track of score & high score
 function scoreCheck(){

@@ -72,7 +72,7 @@ button{
     display: none;
 }
 
-div.notifications{
+.notification{
     margin-bottom: 64px;
     background-color: red;
 }
