@@ -1,8 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap');
 
-/* *{
+*{
     border: 1px solid rgba(255, 255, 255, 0.158);
-} */
+}
 
 body{
     font-family: 'Space Mono', monospace;
@@ -28,6 +28,11 @@ h1{
 
 p{
     font-size: 24px;
+}
+
+header{
+    margin-bottom: 64px;
+
 }
 
 button{
@@ -59,6 +64,12 @@ button{
     display: block;
 }
 
+.try-again{
+    margin-top: 64px;
+    width: 50%;
+    margin: auto;
+}
+
 #check{
     margin-top: 24px;
 }
@@ -66,6 +77,12 @@ button{
 .col{
     padding: 24px;
     margin: 0 24px;
+}
+
+.disabled{
+    color: gray;
+    background-color: rgb(116, 116, 116);
+    cursor: default;
 }
 
 .hidden{
