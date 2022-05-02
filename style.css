@@ -1,9 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap');
 
-*{
-    border: 1px solid rgba(255, 255, 255, 0.158);
-}
-
 body{
     font-family: 'Space Mono', monospace;
     margin: 0;
@@ -15,6 +11,8 @@ body{
     flex-direction: column;
     justify-content: space-between;
     text-align: center;
+    background-image: url("Images/BG.png");
+    background-
 }
 
 a{
@@ -54,6 +52,7 @@ button{
     justify-content: center;
     align-items: center;
     height: 100%;
+    padding-bottom: 128px;
 }
 
 #number-input{
