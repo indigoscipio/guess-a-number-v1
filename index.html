@@ -9,5 +9,30 @@
 </head>
 <body>
     <script src="guess-a-number.js"></script>
+    <header>
+        <h1>Guess my number!</h1>
+        <p>Rule: Try to guess a number between 1 and 20. 🔢</p>
+    </header>
+
+    <button class="button try-again hidden">Try Again?</button>
+    <div class="container">
+        <div class="col col-left">
+            <input type="number" id="number-input">
+            <button class="button" id="check">Check</button>
+        </div>
+        <div class="col col-right">
+            <p>Start Guessing...</p>
+            <p>Your score is: X</p>
+            <p>Your high score is: X</p>
+        </div>
+    </div>
+    
+    <div class="notifications">
+        <p>Your number is too high! Try again?</p>
+    </div>
+
+    <footer>
+        Designed & Coded by <a href="https://www.samueloktavianus.com">Samuel Oktavianus 🎲</a>
+    </footer>
 </body>
 </html>
